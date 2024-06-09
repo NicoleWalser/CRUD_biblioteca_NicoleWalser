@@ -1,8 +1,8 @@
 window.onload = ()=>{
     
-    obtenerLibroPrecio();
+    obtenerLibro();
 }
-async function obtenerLibroPrecio(){
+async function obtenerLibro(){
     let url= 'http://localhost/CRUD_biblioteca_NicoleWalser/back/controlador/cont_libro.php?function=obtenerprecio'
     let consulta = await fetch(url);
     let datos = await consulta.json();
